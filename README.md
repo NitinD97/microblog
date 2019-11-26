@@ -24,3 +24,15 @@ Activate venv
 
 Install all the module into venv using:
 > pip install -r requirements.txt
+
+export the following variables
+> FLASK_APP = /path/to/microblog.py
+> FLASK_ENV = development
+> FLASK_DEBUG = 1
+
+run the commands:
+> flask db init
+> flask db migrate
+> flask db upgrade
+
+
