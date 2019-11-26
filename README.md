@@ -13,7 +13,7 @@ Created a Blogging website, that allows the users to post their thoughts, read o
 - AzureTextTranslation
 
 ## Commands
-Install elasticsearch on your system.
+> Install elasticsearch on your system.
 
 > You should have venv installed in your `python3.6` 
 ```
