@@ -16,16 +16,24 @@ Created a Blogging website, that allows the users to post their thoughts, read o
 Install elasticsearch on your system.
 
 > You should have venv installed in your `python3.6` 
-`python3.6 -m pip install venv`
+```
+python3.6 -m pip install venv
+```
 
 > Install `venv` 
-`python3.6 -m venv venv`
+```
+python3.6 -m venv venv
+```
 
 > Activate venv
-`source venv/bin/activate`
+```
+source venv/bin/activate
+```
 
 > Install all the module into venv using:
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 > set the following environment variables
 ```
@@ -51,7 +59,9 @@ ELASTICSEARCH_URL=http://localhost:9200 or the port in your system
 ```
 
 > finally run the command:
-`flask run`
+```
+flask run
+```
 
 
 
