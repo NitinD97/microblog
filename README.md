@@ -3,13 +3,13 @@ Created a Blogging website, that allows the users to post their thoughts, read o
 
 
 #Technologies
-Flask
-SQLAlchemy
-Elasticsearch
-PostgreSQL
-flask-babel
-Jinja2
-Bootstrap
-Mail
-AzureTextTranslation
+- Flask
+- SQLAlchemy
+- Elasticsearch
+- PostgreSQL
+- flask-babel
+- Jinja2
+- Bootstrap
+- Mail
+- AzureTextTranslation
 
