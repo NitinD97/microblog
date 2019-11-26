@@ -13,7 +13,9 @@ Created a Blogging website, that allows the users to post their thoughts, read o
 - AzureTextTranslation
 
 ## Commands
-You should have venv installed in your `python3.6`
+Install elasticsearch on your system.
+
+You should have venv installed in your `python3.6` 
 > python3.6 -m pip install venv
 
 Install `venv` 
@@ -38,5 +40,15 @@ run the commands:
 > flask db migrate
 
 > flask db upgrade
+
+Create a `.env` file that contains the following variables:
+```
+SECRET_KEY=appSecretKey
+MAIL_SERVER=localhost
+MAIL_PORT=8025
+MS_TRANSLATOR_KEY=key_of_azure_api_service
+ELASTICSEARCH_URL=http://localhost:9200 or the port in your system
+```
+
 
 
