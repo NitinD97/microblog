@@ -3,6 +3,7 @@ Created a Blogging website, that allows the users to post their thoughts, read o
 
 
 ##Technologies
+
 Flask
 SQLAlchemy
 Elasticsearch
