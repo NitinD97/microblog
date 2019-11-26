@@ -15,33 +15,33 @@ Created a Blogging website, that allows the users to post their thoughts, read o
 ## Commands
 Install elasticsearch on your system.
 
-You should have venv installed in your `python3.6` 
-> `python3.6 -m pip install venv`
+> You should have venv installed in your `python3.6` 
+`python3.6 -m pip install venv`
 
-Install `venv` 
-> `python3.6 -m venv venv`
+> Install `venv` 
+`python3.6 -m venv venv`
 
-Activate venv
-> `source venv/bin/activate`
+> Activate venv
+`source venv/bin/activate`
 
-Install all the module into venv using:
-> `pip install -r requirements.txt`
+> Install all the module into venv using:
+`pip install -r requirements.txt`
 
-set the following environment variables
-> `FLASK_APP=/path/to/microblog.py`
+> set the following environment variables
+```
+FLASK_APP=/path/to/microblog.py
+FLASK_ENV=development
+FLASK_DEBUG=1
+```
 
-> `FLASK_ENV=development`
+> run the commands:
+```
+flask db init
+flask db migrate
+flask db upgrade
+```
 
-> `FLASK_DEBUG=1`
-
-run the commands:
-> `flask db init`
-
-> `flask db migrate`
-
-> `flask db upgrade`
-
-Create a `.env` file that contains the following variables:
+> Create a `.env` file that contains the following variables:
 ```
 SECRET_KEY=appSecretKey
 MAIL_SERVER=localhost
@@ -50,8 +50,8 @@ MS_TRANSLATOR_KEY=key_of_azure_api_service
 ELASTICSEARCH_URL=http://localhost:9200 or the port in your system
 ```
 
-finally run the command:
-> `flask run`
+> finally run the command:
+`flask run`
 
 
 
