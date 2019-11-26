@@ -1,2 +1,7 @@
 *.pyc
+*.db
 .*
+
+migrations/*
+venv/*
+__pycache__/*

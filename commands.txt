@@ -1,0 +1,29 @@
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
+FLASK:
+create migrations folder
+terminal$ flask db init
+
+terminal$ flask db migrate
+
+terminal$ flask db upgrade
+
+
+
+
+
+
+ELASTICSEARCH
+terminal$ elasticsearch
+
+python:
+create/put an entry in the index
+>>> es.index(index='my_index', doc_type='my_index', id=1, body={'text':'This is a test entry'})
+
+search text
+>>> es.search(index='my_index', doc_type='my_index', body={'query': {'match': {'text': 'this test'}}})
+
+delete the index
+>>> es.indices.delete('my_index')
