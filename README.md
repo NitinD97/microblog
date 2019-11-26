@@ -17,7 +17,7 @@ You should have venv installed in your `python3.6`
 > python3.6 -m pip install venv
 
 Install `venv` 
-> python3 -m venv venv
+> python3.6 -m venv venv
 
 Activate venv
 > source venv/bin/activate
