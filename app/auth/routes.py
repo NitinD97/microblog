@@ -10,6 +10,10 @@ from app.models import User
 from app.auth.email import send_password_reset_email
 
 
+def lower_case(text):
+    return str(text).lower()
+
+
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
@@ -40,7 +44,7 @@ def register():
         return redirect(url_for('main.index'))
     form = RegistrationForm()
     if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data)
+        user = User(username=form.username.data, email=lower_case(form.email.data))
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()
@@ -56,7 +60,7 @@ def reset_password_request():
         return redirect(url_for('main.index'))
     form = ResetPasswordRequestForm()
     if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data).first()
+        user = User.query.filter_by(email=lower_case(form.email.data)).first()
         if user:
             send_password_reset_email(user)
         flash(
